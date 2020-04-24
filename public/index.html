@@ -3,7 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>쁘띠 게시판</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container board">
+      <h1>게시판</h1>
+      <table border="1">
+        <thead>
+          <th>글번호</th>
+          <th>제목</th>
+          <th>글쓴이</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>첫글</td>
+            <td>나</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <hr />
+    <div class="container form">
+      <h1>글쓰기</h1>
+      <form action="" onsubmit="">
+        <input type="text" name="title" id="title" placeholder="제목" />
+        <input type="text" name="author" id="author" placeholder="작성자" />
+        <textarea name="content" id="content" cols="50" rows="10"></textarea>
+        <button>작성하기</button>
+      </form>
+    </div>
+  </body>
 </html>

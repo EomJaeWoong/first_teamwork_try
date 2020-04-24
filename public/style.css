@@ -1,8 +1,46 @@
-input,
-button {
+body {
+  font-family: sans-serif;
+}
+
+input {
   display: block;
+  margin: 0.5rem 0;
+  width: 15rem;
+  padding: 0.3rem;
+}
+
+textarea {
+  padding: 0.3rem;
+}
+
+button {
+  all: unset;
+  display: block;
+  cursor: pointer;
+}
+
+th,
+td {
+  width: 10rem;
+  text-align: center;
 }
 
 .container {
   margin: 2rem;
+}
+
+.submit-btn {
+  margin-top: 1rem;
+  width: 10rem;
+  padding: 0.7rem;
+  font-size: 1rem;
+  text-align: center;
+  border: 1px solid lightcoral;
+  border-radius: 50px;
+}
+
+.submit-btn:hover {
+  background-color: lightcoral;
+  color: white;
+  border: none;
 }

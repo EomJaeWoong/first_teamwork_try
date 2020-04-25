@@ -12,6 +12,8 @@ app.get('/create', (req, res) => {
 })
 
 app.get('/read', (req, res) => {
+    req.param(id);
+    res.json({ title: board[id].title, author: board[id].author, content: board[id].content });
 })
 
 app.get('/update', (req, res) => {
